@@ -3,7 +3,7 @@
 def func(pswd):
     rez = False
     for s in pswd:
-        if s in '0123456789':
+        if s.isdigit():
             rez = True
             break
     return rez and len(pswd) >= 6 and not pswd.isdigit() and pswd.lower().find('password') == -1

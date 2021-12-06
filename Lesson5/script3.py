@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 
 def func(n):
-    if n < 2:
-        return n
+    assert n > 0, 'n - натуральное число!'
+    if n < 3:
+        return 1
     else:
         return func(n-1) + func(n-2)
 
 s = input('Введите номер числа Фибоначчи = ')
-if not s.isdigit():
-    print('Это должно быть целое неотрицательное число')
+if not s.isdigit() or s == '0':
+    print('Это должно быть натуральное число')
 else:
     print(f"Число = {func(int(s))}")
