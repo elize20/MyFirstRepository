@@ -17,6 +17,7 @@ try:
         data = f.read()
 except FileNotFoundError:
     print('Файл не найден')
+    quit()
 
 key = input('Введите ключ шифрования: ')
 with open('output2.txt', 'w') as f:

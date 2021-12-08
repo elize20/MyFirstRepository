@@ -12,7 +12,8 @@ try:
     with open('input1.txt') as f:
         text = f.read()
 except FileNotFoundError:
-    print('Файл не найден') 
+    print('Файл не найден')
+    quit()
 
 l = text.strip().split(' ')
 rez = True
