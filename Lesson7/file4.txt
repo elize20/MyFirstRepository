@@ -1,0 +1,57 @@
+[student@stand01 ~]$ pip3 list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+pip (9.0.3)
+setuptools (39.2.0)
+[student@stand01 ~]$ python3 -m venv .venv
+[student@stand01 ~]$ source .venv/bin/activate
+(.venv) [student@stand01 ~]$ pip3 install numpy
+Collecting numpy
+  Using cached numpy-1.19.5-cp36-cp36m-manylinux2010_x86_64.whl (14.8 MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.19.5
+(.venv) [student@stand01 ~]$ pip3 install requests
+Collecting requests
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+     |████████████████████████████████| 62 kB 377 kB/s            
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.9-py3-none-any.whl (39 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+     |████████████████████████████████| 149 kB 3.8 MB/s            
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+     |████████████████████████████████| 138 kB 15.7 MB/s            
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     |████████████████████████████████| 61 kB 6.4 MB/s             
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.9 idna-3.3 requests-2.26.0 urllib3-1.26.7
+(.venv) [student@stand01 ~]$ pip3 install pendulum
+Collecting pendulum
+  Downloading pendulum-2.1.2-cp36-cp36m-manylinux1_x86_64.whl (154 kB)
+     |████████████████████████████████| 154 kB 1.8 MB/s            
+Collecting pytzdata>=2020.1
+  Downloading pytzdata-2020.1-py2.py3-none-any.whl (489 kB)
+     |████████████████████████████████| 489 kB 4.4 MB/s            
+Collecting python-dateutil<3.0,>=2.6
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     |████████████████████████████████| 247 kB 8.3 MB/s            
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pytzdata, python-dateutil, pendulum
+Successfully installed pendulum-2.1.2 python-dateutil-2.8.2 pytzdata-2020.1 six-1.16.0
+(.venv) [student@stand01 ~]$ pip3 list
+Package            Version
+------------------ ---------
+certifi            2021.10.8
+charset-normalizer 2.0.9
+idna               3.3
+numpy              1.19.5
+pendulum           2.1.2
+pip                21.3.1
+python-dateutil    2.8.2
+pytzdata           2020.1
+requests           2.26.0
+setuptools         39.2.0
+six                1.16.0
+urllib3            1.26.7
