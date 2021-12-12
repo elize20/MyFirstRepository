@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+#Написать скрипт решения квадратного уравнения
+#С обработкой отрицательного дискриминанта
+#Коэффициенты являются комплексными числами
 
 import math
+
 print('Введите коэффициенты квадратного уравнения:')
 a = complex(float(input('real of a = ')), float(input('imag of a = ')))
 b = complex(float(input('real of b = ')), float(input('imag of b = ')))
